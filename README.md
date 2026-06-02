@@ -1,16 +1,130 @@
-# React + Vite
+# 🦷 Clínica Odontológica – Website de Apresentação e Agendamento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descrição do Projeto
 
-Currently, two official plugins are available:
+Este projeto é um website moderno para uma clínica odontológica, desenvolvido com React e Vite. A plataforma foi criada para apresentar os serviços da clínica, exibir depoimentos de pacientes e permitir o agendamento de consultas através de um formulário com validação de dados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O objetivo é proporcionar uma experiência intuitiva, profissional e acessível para pacientes que procuram cuidados odontológicos de qualidade.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- 🏥 Apresentação institucional da clínica
+- 🦷 Exibição dos serviços odontológicos disponíveis
+- ⭐ Seção de depoimentos de pacientes
+- 📅 Formulário de agendamento de consultas
+- ✅ Validação de dados dos formulários
+- 📱 Design responsivo para dispositivos móveis e desktop
+- ⚡ Interface moderna e desempenho otimizado
+- 🎨 Animações suaves para melhor experiência do utilizador
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- JavaScript (ES6+)
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar e demonstrar competências em:
+
+- Desenvolvimento Frontend Moderno
+- Componentização com React
+- Criação de Interfaces Responsivas
+- Validação de Formulários
+- Experiência do Utilizador (UX)
+- Design Profissional para Negócios
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── Hero.jsx
+│   ├── Services.jsx
+│   ├── Testimonials.jsx
+│   ├── AppointmentForm.jsx
+│   ├── Header.jsx
+│   └── Footer.jsx
+├── App.jsx
+└── main.jsx
+```
+
+## 📅 Sistema de Agendamento
+
+O sistema de agendamento permite:
+
+- Inserção de dados do paciente
+- Validação de campos obrigatórios
+- Verificação do formato do email
+- Validação do número de telefone
+- Feedback visual para erros e sucesso
+
+---
+
+## 💡 Melhorias Futuras
+
+- Integração com WhatsApp
+- Integração com banco de dados
+- Painel administrativo
+- Sistema de autenticação
+- Envio automático de emails
+- Histórico de consultas
+
+---
+
+## 📸 Captura de Tela
+
+Adicione aqui uma imagem do projeto:
+
+```md
+![Preview do Projeto](./src/assets/preview.png)
+```
+
+---
+
+## ▶️ Como Executar o Projeto
+
+1. Clonar o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+2. Entrar na pasta do projeto:
+
+```bash
+cd nome-do-projeto
+```
+
+3. Instalar as dependências:
+
+```bash
+npm install
+```
+
+4. Iniciar o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+---
+
+## 👨‍💻 Autor
+
+**Angelino Eurico**
+
+Desenvolvedor Frontend apaixonado por tecnologia, desenvolvimento web e criação de soluções digitais modernas.
+
+---
