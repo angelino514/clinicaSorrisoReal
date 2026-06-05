@@ -22,6 +22,7 @@ a, button {
   transition: all 0.2s ease-in-out;
 }
 
+
 /* Remove o scrollbar feio durante transições se necessário */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

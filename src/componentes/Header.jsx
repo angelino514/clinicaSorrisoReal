@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
+
+  const handleScroll = (id) => {
+    setIsOpen(false);
+
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({
+        behavior: "smooth"
+      });
+    }, 150);
+  };
+
   // Estado que controla se o menu mobile está aberto (true) ou fechado (false)
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,9 +23,9 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm fixed top-0 z-50 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        
+
         {/* LOGO */}
         <div className="flex items-center gap-2">
           <i className="fa-solid fa-tooth text-cyan-600 text-3xl"></i>
@@ -25,9 +36,10 @@ export default function Header() {
 
         {/* MENU DESKTOP (Escondido em telas menores) */}
         <nav className="hidden md:flex items-center gap-8 font-medium text-slate-600">
-          <a href="#sobre" className="hover:text-cyan-600 transition">Sobre Nós</a>
+          <a href="#hero" className="hover:text-cyan-600 transition"> Início </a>
           <a href="#servicos" className="hover:text-cyan-600 transition">Tratamentos</a>
           <a href="#depoimentos" className="hover:text-cyan-600 transition">Depoimentos</a>
+          <a href="#sobre" className="hover:text-cyan-600 transition">Sobre Nós</a>
           <a href="#contato" className="bg-cyan-600 text-white px-5 py-2.5 rounded-full hover:bg-cyan-700 transition">
             Agendar Consulta
           </a>
@@ -35,8 +47,8 @@ export default function Header() {
 
         {/* BOTÃO DO MENU MOBILE (Aparece apenas em telas pequenas) */}
         <div className="md:hidden flex items-center">
-          <button 
-            onClick={toggleMenu} 
+          <button
+            onClick={toggleMenu}
             className="text-slate-600 hover:text-cyan-600 text-3xl focus:outline-none transition-transform duration-200"
             aria-label="Alternar menu"
           >
@@ -50,7 +62,7 @@ export default function Header() {
       {/* O AnimatePresence garante que a animação de fechamento (exit) aconteça antes do componente sumir do HTML */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             className="md:hidden bg-white border-t border-slate-100 absolute top-20 left-0 w-full shadow-xl z-40"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
@@ -59,37 +71,56 @@ export default function Header() {
           >
             <div className="px-6 pt-4 pb-8 space-y-4 flex flex-col font-medium text-slate-600">
 
-              <a 
-                href="#servicos" 
-                onClick={closeMenu} 
+              <a
                 className="hover:text-cyan-600 transition py-3 border-b border-slate-50 flex items-center justify-between"
+                onClick={() => {
+                  handleScroll('hero');
+                }}
+              >
+                <span>Início</span>
+                <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
+              </a>
+
+
+              <a
+                className="hover:text-cyan-600 transition py-3 border-b border-slate-50 flex items-center justify-between"
+                onClick={() => {
+                  handleScroll('servicos');
+                }}
               >
                 <span>Tratamentos</span>
                 <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
               </a>
-              <a 
-                href="#depoimentos" 
-                onClick={closeMenu} 
+              <a
+
+                href="#depoimentos"
                 className="hover:text-cyan-600 transition py-3 border-b border-slate-50 flex items-center justify-between"
+                onClick={() => {
+                  handleScroll('depoimentos');
+                }}
               >
                 <span>Depoimentos</span>
                 <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
               </a>
 
-               <a 
-                href="#sobre" 
-                onClick={closeMenu} 
+              <a
                 className="hover:text-cyan-600 transition py-3 border-b border-slate-50 flex items-center justify-between"
+                onClick={() => {
+                  handleScroll('sobre');
+                }}
               >
                 <span>Sobre Nós</span>
                 <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
               </a>
-              
+
+
               {/* Botão de ação em destaque dentro do menu mobile */}
-              <a 
-                href="#contato" 
-                onClick={closeMenu} 
+              <a
                 className="bg-cyan-600 text-white text-center px-5 py-3.5 rounded-xl hover:bg-cyan-700 transition font-semibold shadow-md shadow-cyan-100 block mt-4"
+                onClick={() => {
+                  handleScroll('contato');
+                }}
+
               >
                 <i className="fa-solid fa-calendar-check mr-2"></i> Agendar Consulta
               </a>

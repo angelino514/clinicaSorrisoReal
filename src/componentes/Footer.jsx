@@ -59,7 +59,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-3">
               <i className="fa-solid fa-phone text-cyan-400 mt-1"></i> 
-              <span>(11) 4002-8922</span>
+              <span>(+244) 948-221-123</span>
             </li>
             <li className="flex items-start gap-3">
               <i className="fa-solid fa-envelope text-cyan-400 mt-1"></i> 
@@ -67,7 +67,7 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-3">
               <i className="fa-solid fa-location-dot text-cyan-400 mt-1"></i> 
-              <span>Av. Paulista, 1000 - Sala 42<br />Bela Vista - São Paulo/SP</span>
+              <span>Av. Repúpblia, 1000 - Sala 42<br />Huambo- São Luís/SP</span>
             </li>
           </ul>
         </motion.div>
