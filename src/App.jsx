@@ -1,4 +1,3 @@
-import './App.css'
 import Servicos from './componentes/Servicos'
 import Depoimentos from './componentes/Depoimentos'
 import Hero from './componentes/Hero'
