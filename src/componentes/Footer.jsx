@@ -63,11 +63,11 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-3">
               <i className="fa-solid fa-envelope text-cyan-400 mt-1"></i> 
-              <span className="break-all">contato@sorrisoreal.com.br</span>
+              <span className="break-all">contato@sorrisoreal.com.ao</span>
             </li>
             <li className="flex items-start gap-3">
               <i className="fa-solid fa-location-dot text-cyan-400 mt-1"></i> 
-              <span>Av. Repúpblia, 1000 - Sala 42<br />Huambo- São Luís/SP</span>
+              <span>Av. Repúpblia, 1000 - Sala 42<br />Huambo- São Luís/HO</span>
             </li>
           </ul>
         </motion.div>
@@ -104,7 +104,7 @@ export default function Footer() {
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <p>&copy; {new Date().getFullYear()} Sorriso Real Odontologia. Todos os direitos reservados.</p>
-        <p>Responsável Técnico: Dr. Silva Sauro — CRO-SP 123456</p>
+        <p>Responsável Técnico: Dr. Silva Sauro — CRO-AO 123456</p>
       </motion.div>
 
     </footer>
