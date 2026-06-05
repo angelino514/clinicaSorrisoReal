@@ -58,14 +58,7 @@ export default function Header() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <div className="px-6 pt-4 pb-8 space-y-4 flex flex-col font-medium text-slate-600">
-              <a 
-                href="#sobre" 
-                onClick={closeMenu} 
-                className="hover:text-cyan-600 transition py-3 border-b border-slate-50 flex items-center justify-between"
-              >
-                <span>Sobre Nós</span>
-                <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
-              </a>
+
               <a 
                 href="#servicos" 
                 onClick={closeMenu} 
@@ -80,6 +73,15 @@ export default function Header() {
                 className="hover:text-cyan-600 transition py-3 border-b border-slate-50 flex items-center justify-between"
               >
                 <span>Depoimentos</span>
+                <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
+              </a>
+
+               <a 
+                href="#sobre" 
+                onClick={closeMenu} 
+                className="hover:text-cyan-600 transition py-3 border-b border-slate-50 flex items-center justify-between"
+              >
+                <span>Sobre Nós</span>
                 <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
               </a>
               

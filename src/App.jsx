@@ -6,6 +6,7 @@ import Header from './componentes/Header'
 import Footer from './componentes/Footer'
 import Diferenciais from './componentes/Diferencias'
 import AgendamentoForm from './componentes/Angendamento'
+import SobreNos from './componentes/SobreNos'
 
 function App() {
    return (
@@ -15,6 +16,7 @@ function App() {
       <Diferenciais />
       <Servicos />
       <Depoimentos />
+      <SobreNos />
       <AgendamentoForm />
       <Footer />
     </>
