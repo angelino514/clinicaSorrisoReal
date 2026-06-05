@@ -36,7 +36,7 @@ export default function Header() {
 
         {/* MENU DESKTOP (Escondido em telas menores) */}
         <nav className="hidden md:flex items-center gap-8 font-medium text-slate-600">
-          <a href="#hero" className="hover:text-cyan-600 transition"> Início </a>
+          <a href="#hero" className="hover:text-cyan-600 transition"> <span> {"Início"}</span> </a>
           <a href="#servicos" className="hover:text-cyan-600 transition">Tratamentos</a>
           <a href="#depoimentos" className="hover:text-cyan-600 transition">Depoimentos</a>
           <a href="#sobre" className="hover:text-cyan-600 transition">Sobre Nós</a>
@@ -77,7 +77,7 @@ export default function Header() {
                   handleScroll('hero');
                 }}
               >
-                <span>Início</span>
+                <span> {"Início"} </span>
                 <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
               </a>
 

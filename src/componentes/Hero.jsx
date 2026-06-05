@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-full bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 lg:py-32 overflow-hidden">
+    <section id="hero" className="relative h-[100vh] max-h-[900px] bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 lg:py-32 overflow-hidden flex items-center justify-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         
         {/* Lado do Conteúdo (Texto) */}
@@ -13,10 +13,10 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="bg-cyan-500/20 text-cyan-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">
+          <span className="bg-cyan-500/20 text-[14px] text-cyan-300 mt-8 py-1 px-4 rounded-full text-sm font-semibold tracking-wide uppercase">
             Cuidado & Tecnologia
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
             O sorriso dos seus sonhos começa aqui.
           </h1>
           <p className="text-lg text-slate-300 max-w-xl">
